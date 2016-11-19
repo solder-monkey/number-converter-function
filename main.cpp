@@ -9,12 +9,8 @@ const string onesLabels[] = {"Zero","One","Two","Three","Four","Five","Six","Sev
 const string tensLabels[] = {"Twenty","Thirty","Forty","Fifty","Sixty","Seventy","Eighty","Ninety"};
 
 string translateNumber(int num){
-	if (num >= 100)
-		return translateNumber(num / 100).append(" Hundreds ").append(translateNumber(num % 100));
-
-	if (num >= 20)
-		return string().append(tensLabels[(num/10)-2]).append(" ").append(translateNumber(num % 10));
-
+	if (num >= 100)	return translateNumber(num / 100).append(" Hundreds ").append(translateNumber(num % 100));
+	if (num >= 20) return string().append(tensLabels[(num/10)-2]).append(" ").append(translateNumber(num % 10));
 	return onesLabels[num];
 }
 
