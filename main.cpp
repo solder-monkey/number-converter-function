@@ -12,10 +12,8 @@ string translateNumber(int num){
 	if (num >= 100)
 		return translateNumber(num / 100).append(" Hundreds ").append(translateNumber(num % 100));
 
-	if (num >= 20){
-		string result = tensLabels[(num/10)-2];
-		return result.append(" ").append(translateNumber(num % 10));
-	}
+	if (num >= 20)
+		return string().append(tensLabels[(num/10)-2]).append(" ").append(translateNumber(num % 10));
 
 	return onesLabels[num];
 }
