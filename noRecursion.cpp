@@ -12,7 +12,7 @@ string translateNumber(int num){
 	string result = "";
 
 	if (num >= 100)	{
-		result.append(onesLabels[num / 100]).append(" Hundreds ");
+		result.append(onesLabels[num / 100]).append(" Hundred ");
 		num %= 100;
 	}
 	if (num >= 20) {
