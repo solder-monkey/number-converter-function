@@ -4,7 +4,7 @@
 using namespace std;
 
 string translateNumber(int num){
-	const string onesLabels[] = {"Zero","One","Two","Three","Four","Five","Six","Seven","Eight","Nine",
+	const string onesLabels[] = {"","One","Two","Three","Four","Five","Six","Seven","Eight","Nine",
 			     "Ten","Eleven","Twelve","Thirteen","Fourteen","Fiveteen","Sixteen","Seventeen"
 			     "Eighteen","Nineteen"};
 	const string tensLabels[] = {"Twenty","Thirty","Forty","Fifty","Sixty","Seventy","Eighty","Ninety"};
