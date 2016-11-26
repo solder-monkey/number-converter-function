@@ -9,8 +9,10 @@ string translateNumber(int num){
 			     "Eighteen","Nineteen"};
 	const string tensLabels[] = {"Twenty","Thirty","Forty","Fifty","Sixty","Seventy","Eighty","Ninety"};
 
-	string result = "";
+    if (num==0)
+        return "Zero";
 
+	string result = "";
 	if (num >= 100)	{
 		result.append(onesLabels[num / 100]).append(" Hundred ");
 		num %= 100;
